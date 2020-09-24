@@ -1,27 +1,25 @@
+/* Main - Drum Machine 
+ * v 1.0 
+ * 2020-09-24 */
 package mainPack;
 
 public class Main {
-	
-	
 
+	/* Skapar objekt ur InterfaceBuilder klassen som innehåller komponenter och metoder för att skapa, forma, och visa
+	 * en interface. Objektet tar sen i sin tur hjälp av SoundHandler och ListenerHandler klasserna för att ge programmet  
+	 * dess funktionalitet */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
 		InterfaceBuilder gUI = new InterfaceBuilder();
 		gUI.setupContainers();
 		gUI.formatLabels();
-		gUI.setButtonArrayIndexNames();
+		gUI.setButtonArrayIndexNames();	
 		gUI.formatButtons();
 		gUI.addPanelsToFrame();
-		gUI.setHotKeys();
+		gUI.addListenersAndHotKeys();
 		gUI.addCompToPanels();
-		gUI.InitiateListeners();
 		gUI.showUi();
 		
-	
+		
 	}
-	
-	
-
-
 }
