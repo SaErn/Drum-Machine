@@ -6,14 +6,13 @@ package mainPack;
 public class Main {
 
 	/* Skapar objekt ur InterfaceBuilder klassen som innehåller komponenter och metoder för att skapa, forma, och visa
-	 * en interface. Objektet tar sen i sin tur hjälp av SoundHandler och ListenerHandler klasserna för att ge programmet  
-	 * dess funktionalitet */
+	 * en interface. Objektet tar sen i sin tur hjälp av SoundHandler, InterfaceBuilder, MouseEvents, HotKeyTester och 
+	 * KeybordEvents klasserna för att ge programmet dess funktionalitet */
 	public static void main(String[] args) {
 		
 		InterfaceBuilder gUI = new InterfaceBuilder();
 		gUI.setupContainers();
 		gUI.formatLabels();
-		gUI.setButtonArrayIndexNames();	
 		gUI.formatButtons();
 		gUI.addPanelsToFrame();
 		gUI.addListenersAndHotKeys();
